@@ -4,24 +4,19 @@ import { useSelector, useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
 
 const Product = ({ item }) => {
-  const { cart } = useSelector((state) => state);
-  const dispatch = useDispatch();
+  // To Do: Add Selector for cart
+  const cart = []
+  // To do: Initialize Dispatch
   const { enqueueSnackbar } = useSnackbar();
 
   const addToCart = () => {
-    dispatch(add(item));
-    enqueueSnackbar(`Item added to your cart successfully`, {
-      variant: "success",
-      autoHideDuration: 3000,
-    });
+    // To do: dispatch add item here
+    
   };
 
   const removeFromCart = () => {
-    dispatch(remove(item.id));
-    enqueueSnackbar(`Item removed from your cart!`, {
-      variant: "warning",
-      autoHideDuration: 3000,
-    });
+    // To do: dispatch remove item here
+   
   };
 
   return (

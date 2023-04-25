@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const { cart } = useSelector((state) => state);
+  // To do: add cart selector here
+  const cart = []
   return (
     <>
       <nav className="flex items-center justify-between h-20  max-w-6xl mx-auto">
