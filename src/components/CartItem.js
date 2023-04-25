@@ -1,12 +1,10 @@
 import React from "react";
 import { Delete } from "@mui/icons-material";
 import { remove } from "../redux/Slices/cartSlice";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
 
 const CartItem = ({ item }) => {
-  // to do: add selector for cart
-  const cart = []
   const dispatch = useDispatch();
 
   const { enqueueSnackbar } = useSnackbar();
