@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [totalAmount, setTotalAmount] = useState(0);
-  const { cart } = useSelector((state) => state);
+  // To do: add cart selector here
+  const cart = []
   useEffect(() => {
     const total = cart.reduce((acc, curr) => acc + curr.price, 0)
     setTotalAmount(total.toFixed(2));

@@ -5,7 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
 
 const CartItem = ({ item }) => {
-  const { cart } = useSelector((state) => state);
+  // to do: add selector for cart
+  const cart = []
   const dispatch = useDispatch();
 
   const { enqueueSnackbar } = useSnackbar();
